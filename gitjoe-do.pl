@@ -22,7 +22,7 @@ sub main {
 		$ARGV[0] eq 'rmrepo' ||
 		$ARGV[0] eq 'mvrepo'
 		) {
-		$called_script = SCRIPTS_DIR . 'src/' . $ARGV[0] . '.pl';
+		$called_script = SCRIPTS_DIR . $ARGV[0] . '.pl';
 	}
 	else {
 		print colored("Failed!\n", 'bold red')
